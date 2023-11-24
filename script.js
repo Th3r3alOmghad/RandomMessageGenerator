@@ -1,15 +1,10 @@
 const messages = {
-    jokes:["Whats is red and bad for your teeth? A Brick", "What side of the turkey has more feathers? The Inside."],
-    script:["Good to see you", "Welcome Back!", "Do you ever take a day off?"]
+    message: [
+     ["Whats is red and bad for your teeth? A Brick", "What side of the turkey has more feathers? The Inside."],
+     ["Good to see you", "Welcome Back!", "Do you ever take a day off?"],
+     ["You are amazing", "Thank you for coming to work!", "You are a god among men!"]
+    ]
 };
-const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
-function messageAtRandom() {
-    if (randomMessage === 0){
-        return messages.jokes[Math.floor(Math.random() * messages.jokes.length)];
-    }
-    else{
-        return messages.script[Math.floor(Math.random() * messages.script.length)];
-    }
-}
-console.log(messageAtRandom());
+
+console.log(messages.message[2][1]);
