@@ -6,5 +6,5 @@ const messages = {
     ]
 };
 
-
-console.log(messages.message[2][1]);
+const firstIndex = messages.message[Math.floor(Math.random()* messages.message.length)];
+const secondIndex = messages.messages[firstIndex][Math.floor(Math.random()*messages.messages[firstIndex])];
